@@ -1,0 +1,13 @@
+[Unit]
+Description=WatchSync File Synchronization Daemon
+After=network.target
+
+[Service]
+Type=forking
+# EnvironmentFile can be used to set SSHPASS safely
+# EnvironmentFile=/etc/default/watchsync
+ExecStart=/usr/local/bin/watchsync -d
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
