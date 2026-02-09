@@ -81,7 +81,13 @@ exclude = vendor
 Run `watchsync` with a specific configuration file in the **foreground**:
 
 ```bash
-watchsync -c ./my_config.conf
+$ watchsync -c ./my_config.conf
+[cli] === RSYNC START ===
+[cli] <f.st...... User_Manual.md
+[cli] <f.st...... README.md
+[cli] <f.st...... src/Controller/Authentication/LoginController.php
+[cli] === RSYNC OK ===
+
 ```
 
 *Note: If `remote.password` is not defined in the configuration file, you will be securely prompted to enter it.*
